@@ -1,0 +1,2 @@
+GET     /:id          controllers.Application.resolve(id: String)
+PUT     /shorten      controllers.Application.shorten
