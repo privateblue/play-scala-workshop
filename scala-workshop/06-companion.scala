@@ -16,6 +16,22 @@ object NonEmpty5 {
   def simple = new NonEmpty5(0).defaults
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // apply method: you can call it by GCD(15,12)
 
 object GCD {

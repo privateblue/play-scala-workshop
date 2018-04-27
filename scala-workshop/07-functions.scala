@@ -1,5 +1,39 @@
 object functions {
 
+  // defining and calling methods
+
+  def foo(a: Boolean, b: String, c: Int): (Boolean, String, Int)
+    = (a, b, c)
+
+  foo(true, "hello", 3)
+
+  foo(b = "world", c = 7, a = false)
+
+  def bar(a: Boolean) // : (String, Int) => (Boolean, String, Int)
+    = foo(a, (_: String), (_: Int))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // higher order functions
+
   def double1(n: Int): Int
     = n * 2
 
@@ -9,13 +43,28 @@ object functions {
   def quadruple(n: Int, doubler: Int => Int): Int
     = doubler(doubler(n))
 
-  // quadruple(3, double2)
-  // quadruple(3, double1 _)
+  quadruple(3, double1)
+  quadruple(3, double2)
 
   // BUT
 
-  // List(1, 2, 3).map(double2)
-  // List(1, 2, 3).map(double1)
+  val double3 = double1 _
+
+  // UNLESS
+
+  val double4: Int => Int = double1
+
+
+
+
+
+
+
+
+
+
+
+
 
   // map
 

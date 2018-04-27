@@ -4,6 +4,34 @@ class NonEmpty(default: Int) {
   def from(xs: List[Int]): List[Int] = List(default) ++ xs sorted
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // traits, classes, multiple inheritance
 
 abstract class DefaultValue(default: Int)

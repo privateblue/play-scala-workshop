@@ -12,6 +12,25 @@ object Person2 {
   def unapply(p: Person2): Option[(String, String)] = Some((p.firstName, p.lastName))
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // case classes are mostly used as records
 // in contrast to tuples
 
